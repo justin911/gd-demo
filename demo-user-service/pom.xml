@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>demo-gateway</artifactId>
+    <artifactId>demo-user-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-gateway</name>
+    <name>demo-user-service</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
