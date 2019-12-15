@@ -18,6 +18,8 @@
     <modules>
         <module>demo-config</module>
         <module>demo-gateway</module>
+        <module>demo-order-service</module>
+        <module>demo-user-service</module>
     </modules>
 
     <properties>
@@ -32,11 +34,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
         </dependency>
     </dependencies>
 
@@ -81,10 +78,10 @@
                 <includes>
                     <!-- 项目打包完成的包中只包含当前环境文件 -->
                     <include>**/*.xml</include>
-                    <include>application.yml</include>
-                    <include>bootstrap.yml</include>
-                    <include>application-${build.profile.id}.yml</include>
-                    <include>bootstrap-${build.profile.id}.yml</include>
+                    <include>application.properties</include>
+                    <include>bootstrap.properties</include>
+                    <include>application-${build.profile.id}.properties</include>
+                    <include>bootstrap-${build.profile.id}.properties</include>
                 </includes>
             </resource>
             <resource><!-- 复制与*Mapper.java文件同目录的mybatis的*Mapper.xml资源文件 -->
